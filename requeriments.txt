@@ -2,4 +2,3 @@ streamlit
 pandas
 openpyxl
 xlsxwriter
-ortools==9.11.4210
