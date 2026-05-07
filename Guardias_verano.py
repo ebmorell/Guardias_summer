@@ -3,6 +3,8 @@ import pandas as pd
 import random
 import math
 import io
+import subprocess, sys
+subprocess.run([sys.executable, "-m", "pip", "install", "openpyxl", "xlsxwriter", "-q"], check=False)
 from datetime import datetime
 
 # ─────────────────────────────────────────────────────────────────────────────
