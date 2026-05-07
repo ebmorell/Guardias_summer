@@ -1,10 +1,14 @@
+import subprocess, sys
+
+# Garantizar dependencias aunque el requirements.txt no se haya procesado
+for pkg in ["openpyxl", "xlsxwriter"]:
+    subprocess.run([sys.executable, "-m", "pip", "install", pkg, "-q"], check=False)
+
 import streamlit as st
 import pandas as pd
 import random
 import math
 import io
-import subprocess, sys
-subprocess.run([sys.executable, "-m", "pip", "install", "openpyxl", "xlsxwriter", "-q"], check=False)
 from datetime import datetime
 
 # ─────────────────────────────────────────────────────────────────────────────
